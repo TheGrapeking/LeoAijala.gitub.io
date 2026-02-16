@@ -35,7 +35,7 @@
     --line-height-small: 1.2;
 
     --black: #000;
-    --pink: #ff3258;
+    --pink: #8c0000;
     --white: #f0e9f2;
     --white-1: #e5e5e6da;
 
@@ -329,6 +329,17 @@ body:not(.user-is-tabbing) a:focus {
     .back-to-top {
         right: 1rem;
     }
+}
+
+
+.background {
+    background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), 
+        url('./images/header.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-size: var(--font-size-normal);
 }
 
 /* --------------------------------------- */
