@@ -46,6 +46,7 @@
     --container-small-width: 500px;
 
     --gutter-huge: 12rem;
+	--gutter-large: 8rem;
     --gutter-medium: 6rem;
     --gutter-normal: 3rem;
     --gutter-small-1: 2.5rem;
@@ -106,7 +107,8 @@ body {
 }
 
 section {
-    padding: var(--gutter-huge) 0;
+    /*padding-top: var(--gutter-huge) 0;*/
+	padding: var(--gutter-large) 0;
     border-bottom: var(--border-light);
 }
 
@@ -330,18 +332,53 @@ body:not(.user-is-tabbing) a:focus {
         right: 1rem;
     }
 }
+				/*Paralax*/
+/*Paralax*//*Paralax*/
+/*Paralax*//*Paralax*//*Paralax*//*Paralax*//*Paralax*//*Paralax*//*Paralax*//*Paralax*/
+.grid
+{
+	display: grid;
+	justify-content: space-evenly;
+	
+}
+.image
+{
+	justify-content: center;
+}
+.gridRow
+{
+	padding: var(--gutter-medium) 0;
+}
 
-
+.spacer{
+	padding: var(--gutter-medium) 0;
+}
+.spacerS{
+	padding: var(--gutter-small) 0;
+}
 .background {
     background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), 
         url('./images/header.jpg');
     height: 100vh;
     background-size: cover;
-    background-position: center;
     background-attachment: fixed;
-    font-size: var(--font-size-normal);
+    background-position: center;
+    background-repeat: no-repeat;
+     background-size: cover;
 }
+.parallax {
+  /* The image used */
+  background-image: url("./images/header.jpg");
 
+  /* Set a specific height */
+  min-height: 300px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 /* --------------------------------------- */
 /* ----- Navigation ----- */
 /* --------------------------------------- */
@@ -503,7 +540,7 @@ body:not(.user-is-tabbing) a:focus {
     margin-bottom: var(--gutter-normal);
 }
 
-@media(min-width: 901px) {
+@media(min-width : 1008px ){
     .work__image-box {
         flex: 1;
         margin: 0 0 0 10rem;
@@ -563,7 +600,7 @@ body:not(.user-is-tabbing) a:focus {
     margin-bottom: var(--gutter-normal);
 }
 
-@media(min-width: 901px) {
+@media(min-width : 1008px ){
     .about__text {
         flex: 0 0 35%;
     }
@@ -603,7 +640,7 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .footer__social-image {
-    height: 4rem;
+    height: 8rem;
 }
 
 .footer__github-buttons {
