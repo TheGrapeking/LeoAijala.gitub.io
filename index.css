@@ -358,7 +358,7 @@ body:not(.user-is-tabbing) a:focus {
 }
 .background {
     background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), 
-        url('./images/header.jpg');
+    url('./images/Headder.png');
     height: 100vh;
     background-size: cover;
     background-attachment: fixed;
@@ -366,9 +366,11 @@ body:not(.user-is-tabbing) a:focus {
     background-repeat: no-repeat;
      background-size: cover;
 }
+
+
 .parallax {
   /* The image used */
-  background-image: url("./images/header.jpg");
+  background-image: url("./images/Headder.png");
 
   /* Set a specific height */
   min-height: 300px;
@@ -452,8 +454,8 @@ body:not(.user-is-tabbing) a:focus {
 /* --------------------------------------- */
 
 .header {
-    background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), 
-        url('./images/header.jpg');
+    background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .8)), 
+        url('./images/Headder.png');
     height: 100vh;
     background-size: cover;
     background-position: center;
